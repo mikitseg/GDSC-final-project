@@ -6,7 +6,7 @@ class Nav extends React.Component {
   render() {
     return (
       <div className="all">
-        <h1>Snapshot</h1>
+        <h1 className="snap">Snapshot</h1>
         <form className="srch">
           <input className="box" type="text" placeholder="Search..." />
           <button className="search" type="submit"> Search </button>

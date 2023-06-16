@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import '../all.css';
+import './dog.css';
 
 class Dog extends Component {
   constructor() {
@@ -10,7 +10,7 @@ class Dog extends Component {
   }
 
   componentDidMount() {
-    fetch('https://api.unsplash.com/photos/random?client_id=YNAXXbFMyzgzG8E0tRlZQK1vHh3K3kAVYbM88ijfTfY&count=20&query= dog')
+    fetch('https://api.unsplash.com/photos/random?client_id=YNAXXbFMyzgzG8E0tRlZQK1vHh3K3kAVYbM88ijfTfY&count=20&query=dog')
       .then(response => response.json())
       .then(data => {
         this.setState({  dog: data })
@@ -19,8 +19,8 @@ class Dog extends Component {
 
   render() {
     return (
-      <div className=' all'>
-      <h1>Dog</h1>
+      <div className='dog'>
+      <h2>Dog</h2>
         <div className='pass'>
         {this.state. dog.map(dog => (
           <div key={ dog.id} className='app1'>

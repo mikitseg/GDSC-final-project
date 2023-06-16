@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-
-import '../all.css';
+import './birds.css';
 
 class Birds extends Component {
   constructor() {
@@ -20,8 +19,8 @@ class Birds extends Component {
 
   render() {
     return (
-      <div className=' all'>
-        <h1>BIRDS</h1>
+      <div>
+        <h1 className='bird'>BIRDS</h1>
         <div className='pass'>
         {this.state. birds.map(birds => (
           <div key={ birds.id} className='app1'>

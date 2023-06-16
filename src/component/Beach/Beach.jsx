@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import '../all.css';
+import './beach.css';
 
 class Beach extends Component {
   constructor() {
@@ -19,7 +19,8 @@ class Beach extends Component {
 
   render() {
     return (
-      <div className=' beach'>
+      <div>
+        <h1 className='beach'>BEACH</h1>
         <div className='pass'>
         {this.state. beach.map( beach => (
           <div key={ beach.id} className='app1'>
